@@ -1,0 +1,282 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070707;
+    color: white;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff1744;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center, #3b0010 0%, #090909 45%, #000 100%);
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.small-title,
+.section-label {
+    color: #ff1744;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 9vw, 110px);
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span,
+h2 span {
+    color: #ff1744;
+}
+
+.hero-text {
+    color: #bbb;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+
+/* Buttons */
+
+.youtube-btn {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #ff1744;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.youtube-btn:hover {
+    background: #d50032;
+    transform: translateY(-3px);
+}
+
+
+/* Sections */
+
+.section {
+    min-height: 500px;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+
+/* Video Card */
+
+.video-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px 30px;
+
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff1744;
+}
+
+.video-icon {
+    font-size: 55px;
+    color: #ff1744;
+    margin-bottom: 20px;
+}
+
+.video-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.video-card p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.video-card a {
+    color: #ff1744;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* About */
+
+.about {
+    background: #0d0d0d;
+}
+
+.about > p:not(.section-label) {
+    max-width: 700px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.owner-box {
+    max-width: 350px;
+    margin: 40px auto 0;
+    padding: 25px;
+
+    background: #151515;
+    border-radius: 12px;
+    border: 1px solid #292929;
+}
+
+.owner-box h3 {
+    margin-bottom: 10px;
+}
+
+.owner-box p {
+    color: #ff1744;
+}
+
+
+/* Contact */
+
+.contact {
+    min-height: 450px;
+}
+
+.contact > p:not(.section-label) {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.email {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: #ff1744;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 50px 20px;
+    text-align: center;
+    background: #030303;
+    border-top: 1px solid #222;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #777;
+    margin: 8px;
+}
+
+.copyright {
+    margin-top: 25px !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .section h2 {
+        font-size: 35px;
+    }
+}
+```
